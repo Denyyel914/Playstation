@@ -146,6 +146,7 @@ a {
     padding: 2rem;
 }
 
+
 .playstation h4 {
     font-size: 26px;
 }
@@ -462,9 +463,9 @@ a {
 }
 
 @media(max-width: 700px) {
-    .cards {
+    /* .cards {
         grid-template-columns: repeat(2,1fr);
-    }
+    } */
 
     .cards-2 {
         grid-template-columns: 1fr;
@@ -493,9 +494,40 @@ a {
 }
 
 @media(max-width: 500px) {
-    .cards {
+    /* .cards {
         grid-template-columns: 1fr;
         text-align: center;
+    } */
+
+    /* .playstation, .playstation-2 {
+        display: flex;
+        flex-direction: column;
+        
+    } */
+
+    .small-mb {
+        margin-top: 1rem;
+    }
+    
+    .final-fantasy, .last, .ghost, .ps4-logo {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media(max-width: 980px) {
+    .cards {
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+}
+
+
+
+@media(max-width: 620px) {
+    .cards {
+        grid-template-columns: repeat(2,1fr);
+       
     }
 
     .playstation, .playstation-2 {
@@ -503,9 +535,4 @@ a {
         flex-direction: column;
         
     }
-
-    .small-mb {
-        margin-top: 1rem;
-    }
 }
-
